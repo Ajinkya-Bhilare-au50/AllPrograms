@@ -23,16 +23,67 @@ This chain is called the scope chain.
 In the following code, inner forms a closure with the lexical environment of 
 the execution context created when foo is invoked, closing over variable secret:
  */
-function createBase(a) {
-  a = 19; //just random numbers initialised
-  function top(p) {
-    p = 43; //just random numbers initialised
-    return 16;
+/* function createBase(a) {
+  console.log(a);
+  return function top(p) {
+    p + 6;
   }
-  top();
-  return 27;
+  
+  
 }
 
 var addSix = createBase(6);
-addSix(10); // returns 16
-addSix(21); // returns 27
+console.log(addSix(10)); // returns 16
+console.log(addSix(21)); // returns 27
+ */
+/* 
+function makeFunc() {
+  var name = "Mozilla";
+  function displayName() {
+    console.log(name);
+  }
+  return displayName;
+}
+
+var myFunc = makeFunc();
+myFunc();
+ */
+/* 
+function numberGenerator() {
+  // Local “free” variable that ends up within the closure
+  var num = 1;
+  function checkNumber() {
+    console.log(num);
+  }
+  num++;
+  return checkNumber;
+}
+
+var number = numberGenerator();
+number(); // 2
+// practical example3
+var x = 10;
+function foo(a) {
+  var b = 20;
+
+  function bar(c) {
+    var d = 30;
+    return boop(x + a + b + c + d);
+  }
+
+  function boop(e) {
+    return e * -1;
+  }
+
+  return bar;
+}
+
+var moar = foo(5); // Closure
+/* 
+  The function below executes the function bar which was returned 
+  when we executed the function foo in the line above. The function bar 
+  invokes boop, at which point bar gets suspended and boop gets push 
+  onto the top of the call stack (see the screenshot below)
+*/
+// moar(15);
+ 

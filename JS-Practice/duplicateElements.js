@@ -17,6 +17,7 @@ function removeDuplicates(arr) {
 console.log(removeDuplicates(arr));
 
 /* 
+
 Example-3
  
     var arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
