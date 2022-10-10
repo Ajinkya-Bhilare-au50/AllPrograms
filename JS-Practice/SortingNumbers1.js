@@ -67,7 +67,7 @@ Descending Sorted Array is : 96,89,78,65,58,4,3
 // ==================Method-2==Alternate Traditional Method using Bubblesort algorithm============
 //Function Declaration
 function bubbleSort(Array) {
-  let len = Array.length;
+  let len = Array.length; //length of array -----
   for (let i = 0; i < len; i++) {
     //you can also use "for in", so you don't need the variable "len"
     for (let j = 0; j < len; j++) {
