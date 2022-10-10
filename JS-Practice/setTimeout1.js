@@ -13,11 +13,11 @@ setTimeout(() => {
 console.log("3");
  */
 
-console.log("1");
+console.log("One");
 function hello() {
-  console.log("i am hello");
+  console.log("Two");
 }
-
-setTimeout(hello, 2000);
-console.log("2");
-console.log(18 - 15);
+hello();
+// setTimeout(hello, 2000);
+console.log("Three");
+console.log("Four");
