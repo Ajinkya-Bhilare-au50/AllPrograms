@@ -7,14 +7,18 @@ function removeDuplicates(arr) {
 console.log(removeDuplicates(arr));
 
  */
-
+// Function is used to remove duplicate elements in array
+// ---------------------------------------------------------------
 var arr = ["apple", "mango", "apple", "orange", "mango", "mango"];
 
 function removeDuplicates(arr) {
   return [...new Set(arr)];
 }
-
+// ----------------------------------------------------------------
 console.log(removeDuplicates(arr));
+// export syntax---->module.exports=functionName;
+
+module.exports=removeDuplicates;
 
 /* 
 

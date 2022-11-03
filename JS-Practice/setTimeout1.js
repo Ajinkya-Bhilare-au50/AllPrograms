@@ -13,11 +13,60 @@ setTimeout(() => {
 console.log("3");
  */
 
-console.log("One");
-function hello() {
-  console.log("Two");
+//Callback Functions without parameters
+
+/* function GoodMorning() {
+  console.log("Good Morning");
+  setTimeout(GoodAfternoon, 2000);
 }
-hello();
-// setTimeout(hello, 2000);
-console.log("Three");
-console.log("Four");
+
+function GoodAfternoon() {
+  console.log("Good Afternoon");
+  setTimeout(GoodEvening, 2000);
+}
+function GoodEvening() {
+  console.log("Good Evening");
+  setTimeout(GoodNight, 2000);
+}
+
+function GoodNight() {
+  console.log("Good Night");
+}
+
+setTimeout(GoodMorning, 2000);
+ */
+
+//Callback Functions with passing parameters
+
+// t1(3);
+// t2(4);
+// t3(5);
+setTimeout(function t1(a = 3) {
+  console.log(a);
+  setTimeout(function t2(b = 4) {
+    console.log(b);
+    setTimeout(function t3(c = 6) {
+      console.log(c);
+    }, 2000);
+  }, 2000);
+}, 2000);
+
+/* 
+function outcome() {
+  return true;
+}
+
+function process(callbackSuccess, callbackFailure) {
+  if (outcome()) callbackSuccess();
+  else callbackFailure();
+}
+
+process(
+  function () {
+    console.log("OKAY Callback Success");
+  },
+  function () {
+    console.log("OOPS Callback Failure");
+  }
+);
+ */
