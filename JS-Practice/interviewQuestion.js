@@ -1,7 +1,31 @@
 /* 
+What is Hoisting?
+JavaScript Hoisting refers to the process whereby 
+the interpreter appears to move the declaration 
+of functions, variables or classes 
+to the top of their scope, prior to execution of the code. 
+Hoisting allows functions to be safely used in code before 
+they are declared.
+
+
+what is closure?
+A closure gives you an access to an outer function's 
+scope from an inner function.
+
+
 What is JavaScript?
+JavaScript is a client-side scripting language as well as a 
+server-side scripting language. 
+98% of websites use JavaScript on the client side for webpage behavior.
+
 What are the different data types of JavaScript?
+primitive Data type and complex data types
+string ,boolean,object,null,undefined,number,bigint,symbol,array
+
 What are the advantages of using JavaScript?
+JS is faster.
+JS is simple to use.
+Js is modern day scripting language.
 Define undefined and undeclared variables
 What is the use of PromptBox?
 What is the difference between == and === operator?
