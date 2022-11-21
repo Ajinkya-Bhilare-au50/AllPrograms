@@ -1,0 +1,23 @@
+{
+  "files.autoSave": "afterDelay",
+  "editor.fontSize": 20,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {},
+  "editor.formatOnPaste": true,
+  "editor.fontWeight": "normal",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.minimap.enabled": false,
+  "editor.mouseWheelZoom": true,
+  "workbench.colorCustomizations": {
+    "terminal.foreground": "#99C363",
+    "terminal.background": "#15222E"
+  },
+  "editor.formatOnType": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "django-html": "html"
+  },
+  "workbench.startupEditor": "none"
+}

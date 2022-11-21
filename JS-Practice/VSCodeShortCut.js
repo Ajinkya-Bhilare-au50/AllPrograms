@@ -14,4 +14,5 @@ rfce-react functional components exports
 clg-for console.log()
 ctrl + c - to cancel the server running 
 press . to open VSCODE on githubrepository 
+ctrl + K for copy relative path
 */
