@@ -15,4 +15,9 @@ clg-for console.log()
 ctrl + c - to cancel the server running 
 press . to open VSCODE on githubrepository 
 ctrl + K for copy relative path
+alt+down arrow -to increase the size by point one(inspect elements)
+don arrow to increase by one pixel(inspect elements)
+ctrl+enter -----to change line
+alt+click for multiple cursor typing in vs code
+
 */
