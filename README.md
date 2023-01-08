@@ -1,2 +1,2 @@
-# AllPrograms
+# All-Programs
 Learning JS programs..
