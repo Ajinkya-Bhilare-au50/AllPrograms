@@ -19,5 +19,6 @@ function calculateLargestPrime(num) {
   }
   return temp;
 }
-t = calculateLargestPrime(17);
-console.log(t)
+t = calculateLargestPrime(16);
+console.log(t);
+// 1,5,25
