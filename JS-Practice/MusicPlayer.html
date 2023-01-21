@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>MusicPlayerApp</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <script
+      src="https://kit.fontawesome.com/b90a785047.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        position: relative;
+        font-family: "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .container1 {
+        width: 55%;
+        height: 460px;
+
+        background-color: #6b6c81;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .line {
+        margin-top: 40px;
+        border-color: #4f5065;
+      }
+      .overfloat {
+        width: 250px;
+        height: 250px;
+        background-color: #ddded9;
+
+        position: absolute;
+        transform: translateX(-50%);
+        left: 50%;
+
+        bottom: 300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+      .fa-solid {
+        color: White;
+      }
+      .items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin-top: 35px;
+      }
+      .upper {
+        margin: 20px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+      }
+      .colored {
+        background-color: aqua;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 25px;
+        cursor: pointer;
+      }
+      .fa-heart,
+      .fa-repeat {
+        color: aqua;
+        cursor: pointer;
+      }
+      .image {
+        width: 90%;
+      }
+      .Large {
+        font-size: xx-large;
+      }
+      .wrapper {
+        padding-left: 65px;
+        padding-top: 120px;
+        font-size: larger;
+        color: rgb(218, 215, 215);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .volume {
+        margin-left: 10px;
+      }
+      .timer {
+        display: flex;
+        padding-top: 5px;
+        color: aliceblue;
+        justify-content: space-between;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: small;
+      }
+    </style>
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="container1">
+      <div class="overfloat">
+        <img class="image" src="./musicL.png" alt="" />
+      </div>
+      <div class="upper">
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-repeat"></i>
+      </div>
+      <div class="wrapper">
+        <h3 class="Large">Raataan Lambiyan</h3>
+        <p>Artist-Echos</p>
+        <p>Album-Shershaah Original Motion Picture Soundtrack</p>
+      </div>
+
+      <hr class="line" />
+      <div class="timer">
+        <p>0:00</p>
+        <p>4:20</p>
+      </div>
+      <div class="items">
+        <i class="fa-solid fa-backward"></i>
+        <div class="colored"><i class="fa-solid fa-play fa-xl"></i></div>
+        <i class="fa-solid fa-forward"></i>
+      </div>
+      <div class="volume"><i class="fa-solid fa-volume-high"></i></div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>
