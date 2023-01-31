@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Tip Calculator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+      }
+      .main {
+        display: grid;
+        place-items: center;
+        margin-top: 10%;
+      }
+      .but {
+        color: #ffffff;
+        background: #127560;
+        border: none;
+        text-transform: uppercase;
+        width: 105px;
+        height: 35px;
+        cursor: pointer;
+        margin-top: 10px;
+        color: rgb(245, 245, 245);
+        font-weight: bold;
+        border-radius: 8px;
+      }
+      .but:hover {
+        background-color: #028967;
+      }
+      .btn-red {
+        background-color: #be1111;
+      }
+      .btn-red:hover {
+        background-color: rgb(213, 1, 1);
+      }
+      .container {
+        height: 16rem;
+        width: 32rem;
+        background-color: #00494d;
+        color: #1eaf96;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        border-radius: 8px;
+        outline: 4px solid rgb(3, 3, 3);
+        outline-offset: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div>
+          <label for="tip">Bill Amount(Rs)</label>
+          <input id="billamount" type="text" name="billamount" />
+        </div>
+        <div>
+          <label for="tip">Percentage Tip(%)</label>
+          <input type="text" name="" id="percent" />
+        </div>
+        <div>
+          <label for="">Tip Amount</label>
+          <input type="text" name="" id="tip" disabled />
+        </div>
+        <div>
+          <label for="">Total</label>
+          <input type="text" name="" id="total" disabled />
+        </div>
+
+        <div>
+          <input id="btn" class="but" type="button" value="Calculate" />
+          <input id="clear" class="but btn-red" type="button" value="Clear" />
+        </div>
+      </div>
+    </div>
+
+    <script src="tip.js"></script>
+  </body>
+</html>
